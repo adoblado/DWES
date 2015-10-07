@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Ejercicio 10. 
+Escribe un programa que nos diga el horóscopo a partir del día y el mes de nacimiento
+-->
+<html>
+  <head>
+    <title>Ejercicio 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h2>Dime tu fecha de nacimiento y te diré tu horóscopo</h2>
+    <form action="ejer10.php" method="post">
+      Selecciona el mes 
+      <select name="mes">
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Septiembre">Septiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select><br>
+      Introduce el dia
+      <input type="number" name="dia" min="1" max="31" step="1"><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

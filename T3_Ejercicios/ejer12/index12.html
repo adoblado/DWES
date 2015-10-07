@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Ejercicio 12.
+Realiza un minicuestionario con 10 preguntas tipo test sobre las asignaturas que se imparten en
+el curso. Cada pregunta acertada sumará un punto. El programa mostrará al final la calificación
+obtenida. Pásale el minicuestionario a tus compañeros y pídeles que lo hagan para ver qué tal andan
+de conocimientos en las diferentes asignaturas del curso.
+-->
+<html>
+  <head>
+    <title>Ejercicio 12</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h2>MINICUESTIONARIO OBLIGATORIO</h2>
+    <form action="ejer12.php" method="get">
+      <h4>1. ¿Qué significa DWES?</h4>
+      <input type="radio" name="uno" value="1" required="required"> Desarrollo Web Entorno Servidor.<br>
+      <input type="radio" name="uno" value="2"> Despropósito Web En Solitario.<br>
+      <input type="radio" name="uno" value="3"> Diagnóstico Web Entrado Salud.<br><br>
+      
+      <h4>2. ¿Cuánto se aprende en inglés?</h4>
+      <input type="radio" name="dos" value="1" required="required"> Mucho.<br>
+      <input type="radio" name="dos" value="2"> Algo.<br>
+      <input type="radio" name="dos" value="3"> Nada.<br><br>
+      
+      <h4>3. ¿Sirve empresa para algo?</h4>
+      <input type="radio" name="tres" value="1" required="required"> Sí.<br>
+      <input type="radio" name="tres" value="2"> No.<br>
+      <input type="radio" name="tres" value="3"> Quizá.<br><br>
+      
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Resetear">
+    </form>
+  </body>
+</html>
