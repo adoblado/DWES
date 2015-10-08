@@ -45,7 +45,7 @@ de las 5 que se deben dar a elegir mediante un formulario.
           }
           
           //pinta primer elemento
-          if (isset($_REQUEST['caracter'])) {
+          if (trim($_REQUEST['caracter']) != "") {
             echo $caracter;
           } else if (isset($_REQUEST['imagen'])) {
             echo "<img src='images/", $imagen, "' >";
@@ -61,17 +61,17 @@ de las 5 que se deben dar a elegir mediante un formulario.
           //pinta último elemento
           if ($fila == $altura) {
             for ($j = 1; $j <= ($espaciosDentro + 1); $j++) {
-              if (isset($_REQUEST['imagen'])) {
-                echo "<img src='images/", $imagen, "' >";
-              } else if (isset($_REQUEST['caracter'])) {
+              if (trim($_REQUEST['caracter']) != "") {
                 echo $caracter;
+              } else if (isset($_REQUEST['imagen'])) {
+                echo "<img src='images/", $imagen, "' >";
               }
             }
           } else if ($fila != 1) {
-            if (isset($_REQUEST['imagen'])) {
-              echo "<img src='images/", $imagen, "' >";
-            } else if (isset($_REQUEST['caracter'])) {
+            if (trim($_REQUEST['caracter']) != "") {
               echo $caracter;
+            } else if (isset($_REQUEST['imagen'])) {
+              echo "<img src='images/", $imagen, "' >";
             }
           }
           
@@ -99,4 +99,11 @@ de las 5 que se deben dar a elegir mediante un formulario.
             "</select>".
             "</td></tr>";
           echo "<tr><td>Texto: <input type='text' name='caracter' size='5'></td></tr>";
-          echo "<tr><td>Altura: <input type='number' name='altura' min='3' step='1' required='required'></t
+          echo "<tr><td>Altura: <input type='number' name='altura' min='3' step='1' required='required'></td></tr>";
+          echo "<tr><td><input type='submit' name='enviar' value='Enviar'></tr></td>"; 
+        echo "</form>";
+        echo "</table>";
+      }
+    ?>
+  </body>
+</html>
