@@ -116,6 +116,24 @@ div#contenedor article {
 span.numeroEjer {
     font-weight: bold;
 }
+article div.ejemplo {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+article div.ejemplo table {
+    margin-top: 15px;
+}
+article div.ejemplo th, article div.ejemplo td {
+    padding: 0 15px;
+}
+div#contenedor article ul {
+    list-style: disc;
+    padding-left: 50px;
+}
+article div.ejemplo tr:first-child{
+    border-bottom: 1px solid black;
+}
 span.enlaceEjercicio a {
     color: #CC7A00;
     font-weight: bold;

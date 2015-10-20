@@ -24,15 +24,25 @@ Los números que se han cambiado deben aparecer resaltados de un color diferente
     </style>
   </head>
   <body>
-    <header>
+    <a href="indexTema5.html"><header>
       <h1>Ejercicios Tema 5</h1>
-    </header>
+    </header></a>
     <nav>
       <a href="ejer01.php"><span>Ejer 01</span></a>
       <a href="ejer02.php"><span>Ejer 02</span></a>
       <a href="ejer03.php"><span>Ejer 03</span></a>
       <a href="ejer04.php"><span>Ejer 04</span></a>
       <a href="ejer05.php"><span>Ejer 05</span></a>
+      <a href="ejer06.php"><span>Ejer 06</span></a>
+      <a href="ejer07.php"><span>Ejer 07</span></a>
+      <a href="ejer08.php"><span>Ejer 08</span></a>
+      <a href="ejer09.php"><span>Ejer 09</span></a>
+      <a href="ejer10.php"><span>Ejer 10</span></a>
+      <a href="ejer11.php"><span>Ejer 11</span></a>
+      <a href="ejer12.php"><span>Ejer 12</span></a>
+      <a href="ejer13.php"><span>Ejer 13</span></a>
+      <a href="ejer14.php"><span>Ejer 14</span></a>
+      <a href="ejer15.php"><span>Ejer 15</span></a>
     </nav>
     <section>
       <div id="contenedor">
