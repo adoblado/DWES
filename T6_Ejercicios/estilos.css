@@ -1,0 +1,151 @@
+/*
+Tema 5
+*/
+/* 
+    Created on : 09-oct-2015, 13:17:07
+    Author     : adolfi
+*/
+
+/* INICIALIZAR LA PÁGINA */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+ 
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FIN INICIALIZAR PÁGINA */
+
+
+
+body {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* CABECERA */
+header {
+    text-align: center;
+    background-color: #7AAFFF;
+    padding: 3rem;
+}
+header h1 {
+    font-size: 2rem;
+}
+/* FIN CABECERA */
+
+
+/* NAVEGADOR */
+nav {
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFB13D;
+    margin: 0;
+}
+nav span {
+    float: left;
+    padding: 1rem 0.5rem;
+    background-color: #FFB13D;
+    font-weight: bold;
+}
+nav span:hover, nav span:active {
+    background-color: #FF9900;
+}
+/* FIN NAVEGADOR */
+
+
+/* CUERPO */
+div#contenedor {
+    background-color: #BCD7FF;
+}
+
+div#contenedor article {
+    line-height: 1.7;
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    border-bottom: 1px solid #999999;
+}
+span.numeroEjer {
+    font-weight: bold;
+}
+span.enlaceEjercicio a {
+    color: #CC7A00;
+    font-weight: bold;
+}
+span.enlaceEjercicio a:hover, span.enlaceEjercicio a:active {
+    color: #F29100;
+}
+/* FIN CUERPO */
+
+
+/* FOOTER */
+footer {
+    overflow: hidden;
+    background-color: #BCD7FF;
+    margin: 0 auto;
+    padding: 2rem;
+}
+footer div#anterior {
+    float: left;
+    margin-left: 8rem;
+}
+footer div#siguiente {
+    float: right;
+    margin-right: 8rem;
+}
+footer div a {
+    color: #CC7A00;
+    font-weight: bold;
+}
+footer div a:hover, footer div a:active {
+    color: #F29100;
+}
+/* FIN FOOTER */
