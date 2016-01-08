@@ -7,6 +7,7 @@ header h1 {
 }
 
 nav ul.container {
+  width: 22%;
   font-weight: bold;
 }
 
