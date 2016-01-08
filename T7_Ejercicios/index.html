@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+EJERCICIOS DEL TEMA 7. ACCESO A BASE DE DATOS
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/misEstilos.css"  media="screen,projection"/>
+    
+    <title>TEMA 7. ACCESO A BASE DE DATOS</title>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header class="deep-orange darken-3 section">
+      <section class="container white-text center-align">
+        <h1 >EJERCICIOS TEMA 7</h1>
+        <h3>Acceso a Bases de Datos</h3>
+      </section>
+    </header>
+    <nav class="deep-orange lighten-2">
+      <ul class="container">
+        <li><a href="ejers.php?carp=ejer01_mysql&ejer=ejer01_mysql">Ejercicio 1 - mysql</a></li>
+        <li><a href="ejers.php?carp=ejer01_mysqli&ejer=ejer01_mysqli">Ejercicio 1 - mysqli</a></li>
+        <li><a href="ejers.php?carp=ejer01_pdo&ejer=ejer01_pdo">Ejercicio 1 - PDO</a></li>
+        <li><a href="ejers.php?carp=ejer02&ejer=ejer02">Ejercicio 2</a></li>
+        <li><a href="ejers.php?carp=ejer03&ejer=ejer03">Ejercicio 3</a></li>
+        <li><a href="ejers.php?carp=ejer04_05&ejer=ejer">Ejercicio 4/5</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="ejercicio section container">
+        <header><h5>Ejercicio 1</h5></header>
+        <article>
+          <p>Crea una aplicación web que permita hacer listado, alta, baja y 
+            modificación sobre la tabla cliente de la base de datos banco.</p>
+          <ol>
+            <li>Para realizar el listado bastará un SELECT, tal y como se ha 
+              visto en los ejemplos.</li>
+            <li>El alta se realizará mediante un formulario donde se 
+              especificarán todos los campos del nuevo registro. Luego esos 
+              datos se enviarán a una página que ejecutará INSERT.</li>
+            <li>Para realizar una baja, se pedirá el DNI del cliente mediante 
+              un formulario y a continuación se ejecutará DELETE para borrar el 
+              registro cuyo DNI coincida con el introducido.</li>
+            <li>La modificación se realiza mediante UPDATE. Se pedirá 
+              previamente en un formulario el DNI del cliente para el que 
+              queremos modificar los datos.</li>
+          </ol>
+        </article>
+        <footer>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer01_mysql&ejer=ejer01_mysql">Sol. con mysql
+            <i class="material-icons right">send</i>
+          </a>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer01_mysqli&ejer=ejer01_mysqli">Sol. con mysqli
+            <i class="material-icons right">send</i>
+          </a>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer01_pdo&ejer=ejer01_pdo">Sol. con PDO
+            <i class="material-icons right">send</i>
+          </a>
+        </footer>
+      </section>
+      
+      <div class="divider"></div>
+      
+      <section class="ejercicio section container ">
+        <header><h5>Ejercicio 2</h5></header>
+        <article>
+          <p>Modifica el programa anterior añadiendo las siguientes mejoras:</p>
+          <ol>
+            <li>El listado debe aparecer paginado en caso de que haya muchos 
+              clientes.</li>
+            <li>Al hacer un alta, se debe comprobar que no exista ningún cliente 
+              con el DNI introducido en el formulario.</li>
+            <li>La opción de borrado debe pedir confirmación.</li>
+            <li>Cuando se realice la modificación de los datos de un cliente, 
+              los campos que no se han cambiado deberán permanecer inalterados 
+              en la base de datos.</li>
+          </ol>
+        </article>
+        <footer>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer02&ejer=ejer02">Solución
+            <i class="material-icons right">send</i>
+          </a>
+        </footer>
+      </section>
+      
+      <div class="divider"></div>
+      
+      <section class="ejercicio section container">
+        <header><h5>Ejercicio 3</h5></header>
+        <article>
+          <p>Modifica la tienda virtual realizada anteriormente de tal forma 
+            que todos los datos de los artículos se guarden en una base de 
+            datos.</p>
+        </article>
+        <footer>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer03&ejer=ejer03">Solución
+            <i class="material-icons right">send</i>
+          </a>
+        </footer>
+      </section>
+      
+      <div class="divider"></div>
+      
+      <section class="ejercicio section container">
+        <header><h5>Ejercicio 4</h5></header>
+        <article>
+          <p>Crea el programa GESTISIMAL (GESTIón SIMplifcada de Almacén) para 
+            llevar el control de los artículos de un almacén. De cada artículo 
+            se debe saber el código, la descripción, el precio de compra, el 
+            precio de venta y el stock (número de unidades). La entrada y salida 
+            de mercancía supone respectivamente el incremento y decremento de 
+            stock de un determinado artículo. Hay que controlar que no se pueda 
+            sacar más mercancía de la que hay en el almacén. El programa debe 
+            tener, al menos, las siguientes funcionalidades: listado, alta, 
+            baja, modificación, entrada de mercancía y salida de mercancía.</p>
+        </article>
+        <header><h5>Ejercicio 5</h5></header>
+        <article>
+          <p>Modifica el programa anterior añadiendo las siguientes mejoras:</p>
+          <ol>
+            <li>Comprueba la existencia del código en el alta, la baja y la 
+              modificación de artículos para evitar errores.</li>
+            <li>Cambia la opción “Salida de stock” por “Venta”. Esta nueva 
+              opción permitirá hacer una venta de varios artículos y emitir la 
+              factura correspondiente. Se debe preguntar por los códigos y las 
+              cantidades de cada artículo que se quiere comprar. Aplica un 21% 
+              de IVA.</li>
+          </ol>
+        </article>
+        <footer>
+          <a class="waves-effect waves-light btn-large deep-orange darken-3" 
+             href="ejers.php?carp=ejer04_05&ejer=ejer">Solución
+            <i class="material-icons right">send</i>
+          </a>
+        </footer>
+      </section>
+    </main>
+    <footer class="deep-orange darken-3 page-footer section">
+      <div class="container white-text center-align">
+        <h6>Página realizada por Adolfina Rueda Sánchez</h6>
+        <h6>Asignatura Desarrollo Web en Entorno Servidor</h6>
+        <h6>IES Campanillas</h6>
+      </div>
+    </footer>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

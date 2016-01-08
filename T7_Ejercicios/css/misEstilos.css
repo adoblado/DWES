@@ -1,0 +1,190 @@
+/* 
+  Created on : 16-nov-2015, 9:20:15
+  Author     : adolfi
+*/
+@font-face {
+  font-family: 'icomoon';
+  src:url('../font/icomoon/icomoon.eot');
+  src:url('../font/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+          url('../font/icomoon/icomoon.woff') format('woff'),
+          url('../font/icomoon/icomoon.ttf') format('truetype'),
+          url('../font/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+header h1 {
+  font-weight: 700; 
+}
+
+nav ul.container {
+  width: 45%;
+  font-weight: bold;
+}
+
+section.ejercicio h5, section.ejercicio h4 {
+  font-weight: 600;
+}
+
+header.dentroEjer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+article.dentroEjer td.input-field {
+  padding: 10px;
+}
+
+article.dentroEjer form.botonInline {
+  display: inline;
+}
+
+article.dentroEjer div#confirmacionBorrado {
+  position: fixed;
+  height: 150px;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -350px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 20%/20%;
+  box-shadow: 1px 1px 8px 4px dimgray;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+article.dentroEjer div#confirmacionBorrado p {
+  font-size: 1.2rem;
+}
+
+
+/* EJERCICIO 3 */
+
+article.dentroEjer.ejer3 {
+  overflow: hidden;
+}
+article.dentroEjer.ejer3 h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+  /* LA ZONA DE PRODUCTOS */
+  article.dentroEjer.ejer3 article#productos {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+  }
+  /* LA ZONA DEL CARRITO */
+  article.dentroEjer.ejer3 article#carrito {
+    float: right;
+    width: 25%;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+  }
+    /* LOS TÍTULOS DE CADA ZONA */
+    article.dentroEjer.ejer3 article#productos h3, article.dentroEjer.ejer3 article#carrito h3 {
+      padding: 0 0 15px 5px;
+      border-bottom: 4px solid dimgrey;
+      font-size: 1.5rem;
+    }
+    /* EL CONTENEDOR DE CADA UNO DE LOS PRODUCTOS */
+    article.dentroEjer.ejer3 article#productos section.cadaProducto {
+      overflow: hidden;
+      min-height: 200px;
+      border-bottom: 2px solid grey;
+      margin: 15px 0 0 5px;
+    }
+      /* LA IMAGEN DE CADA PRODUCTO */
+      article.dentroEjer.ejer3 article#productos section.cadaProducto img {
+        height: 170px;
+        float: left;
+        margin: 0 40px 10px 30px;
+      }
+      article.dentroEjer.ejer3 article#productos section.cadaProducto.detalle img {
+        height: 300px;
+      }
+      /* EL CONTENEDOR DE LA INFORMACIÓN DE CADA PRODUCTO */
+      article.dentroEjer.ejer3 article#productos section.cadaProducto div {
+        overflow: hidden;
+      }
+      article.dentroEjer.ejer3 article#productos section.cadaProducto form.botonInline {
+        overflow: hidden;
+        margin-left: 15px;
+      }
+    /* EL CONTENEDOR DE CADA UNO DEL CARRITO */
+    article.dentroEjer.ejer3 article#carrito section.cadaProducto {
+      height: 150px;
+      overflow: hidden;
+      border-bottom: 1.5px solid grey;
+      margin: 15px 5px 0 0;
+    }
+      /* LA IMAGEN DE CADA UNO DEL CARRITO */
+      article.dentroEjer.ejer3 article#carrito section.cadaProducto img {
+        height: 100px;
+        float: left;
+        margin-left: 15px;
+      }
+      /* EL CONTENEDOR DE INFO DE CADA UNO DEL CARRITO */
+      article.dentroEjer.ejer3 article#carrito section.cadaProducto div {
+        margin-left: 70px;
+      }
+    article.dentroEjer.ejer3 article#carrito p {
+      text-align: right;
+      margin: 15px 35px 0 0; 
+    }
+    article.dentroEjer.ejer3 article#carrito p span {
+      font-weight: bold;
+    }
+
+
+/* EJERCICIO 4/5 */
+article.dentroEjer td.codigo {
+  width: 3%;
+}
+article.dentroEjer td.input-field.number {
+  width: 16%;
+}
+
+.icon-truckA, .icon-truckB {
+  font-family: 'icomoon';
+  overflow: hidden;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.icon-truckA:before {
+  content: "\e00e";
+}
+.icon-truckB:after {
+  content: "\e00e";
+}
+
+table.ventaSI td {
+  width: 33.33%;
+}
+
+table.venta {
+  width: 60%;
+  margin: 0 auto;
+}
+
+table.finFactura {
+  width: 23%;
+  margin-left: 57%;
+}
+table.finFactura td {
+  text-align: right;
+}
+table.finFactura td.codigo {
+  width: 10%;
+}
+table.finFactura td.input-field.number {
+  width: 25%;
+}
